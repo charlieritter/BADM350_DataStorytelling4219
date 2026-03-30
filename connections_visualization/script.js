@@ -137,22 +137,19 @@ new Chart(ctxCompanies, {
     },
     options: {
         ...commonOptions,
+        indexAxis: 'y',
         plugins: {
             legend: {
                 display: false
             }
         },
         scales: {
-            y: {
+            x: {
                 beginAtZero: true,
                 grid: { color: 'rgba(255, 255, 255, 0.05)' }
             },
-            x: {
-                grid: { display: false },
-                ticks: {
-                    maxRotation: 45,
-                    minRotation: 45
-                }
+            y: {
+                grid: { display: false }
             }
         }
     }
